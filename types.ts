@@ -1,7 +1,7 @@
 
 export enum ExteriorMaterial {
   METAL_SIDING = 'METAL_SIDING', // Профлист
-  GALVANIZED = 'GALVANIZED', // Оцинкованный лист по RAL
+  GALVANIZED = 'GALVANIZED', // Профлист, RAL на выбор
 }
 
 export enum InteriorMaterial {

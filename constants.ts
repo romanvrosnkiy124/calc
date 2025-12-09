@@ -1,4 +1,5 @@
 
+
 import { CabinConfig, ExteriorMaterial, InteriorMaterial, InsulationType, PricingRule, WindowSize, DoorType, DoorCategory, PlumbingType } from './types';
 
 export const DEFAULT_CONFIG: CabinConfig = {
@@ -46,15 +47,15 @@ export const PRICING: PricingRule = {
   basePricePerSqm: 162000 / DEFAULT_AREA,
   exteriorPricesPerSqm: {
     [ExteriorMaterial.METAL_SIDING]: 0, // Включено в базу
-    [ExteriorMaterial.GALVANIZED]: 16000 / DEFAULT_AREA,
+    [ExteriorMaterial.GALVANIZED]: 16500 / DEFAULT_AREA,
   },
   interiorPricesPerSqm: {
     [InteriorMaterial.DVPO]: 0, // Включено в базу
     [InteriorMaterial.OSB]: 2190,
     [InteriorMaterial.WOODEN_LINING]: 2640,
     [InteriorMaterial.PVC_PANELS]: 1430,
-    // Цена 24500 за всю бытовку 5.85x2.45
-    [InteriorMaterial.MDF_PVC]: 24500 / DEFAULT_AREA, 
+    // Цена 20000 за всю бытовку 5.85x2.45
+    [InteriorMaterial.MDF_PVC]: 20000 / DEFAULT_AREA, 
   },
   insulationPricesPerSqm: {
     [InsulationType.NONE]: 0,
@@ -100,7 +101,7 @@ export const PRICING: PricingRule = {
 export const LABELS = {
   exterior: {
     [ExteriorMaterial.METAL_SIDING]: 'Профлист С8 (Стандарт)',
-    [ExteriorMaterial.GALVANIZED]: 'Оцинкованный лист по RAL',
+    [ExteriorMaterial.GALVANIZED]: 'Профлист, RAL на выбор',
   },
   interior: {
     [InteriorMaterial.DVPO]: 'ДВП/Оргалит (База)',
